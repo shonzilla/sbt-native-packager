@@ -346,7 +346,7 @@ declare -r lib_dir="$(realpath "${app_home}/../lib")"
 declare -a app_mainclass=(${{app_mainclass}})
 
 ${{template_declares}}
-# java_cmd is overrode in process_args when -java-home is used
+# java_cmd is overridden in process_args when -java-home is used
 declare java_cmd=$(get_java_cmd)
 
 # if configuration files exist, prepend their contents to $@ so it can be processed by this runner
